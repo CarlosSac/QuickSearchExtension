@@ -1,19 +1,19 @@
 {
-  "manifest_version": 3,
-  "name": "Quick Search",
-  "version": "1.0",
-  "description": "Press Alt+S to instantly search on any website",
-  "permissions": ["activeTab", "scripting"],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "commands": {
-    "open-search": {
-      "suggested_key": {
-        "default": "Alt+S",
-        "mac": "Alt+S"
-      },
-      "description": "Open quick search bar"
+    "manifest_version": 3,
+    "name": "Quick Search",
+    "version": "0.1.0",
+    "description": "Press Alt+S to instantly search on any website",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "open-search": {
+            "suggested_key": {
+                "default": "Alt+S",
+                "mac": "Alt+S"
+            },
+            "description": "Open quick search bar"
+        }
     }
-  }
 }
