@@ -42,20 +42,6 @@ If no search bar is found on the page, it falls back to a Google `site:` search 
 
 **storage**:to persist the enable/disable toggle and site overrides
 
-## Project Structure
-
-```
-├── manifest.json     # Extension manifest (Manifest V3)
-├── background.js     # Service worker. Handles the Alt+S command
-├── content.js        # Injected script. Overlay UI and search logic
-├── popup.html        # Extension popup with on/off toggle
-├── popup.js          # Popup toggle logic
-└── icons/
-    ├── icon16.png
-    ├── icon48.png
-    └── icon128.png
-```
-
 ## License
 
 MIT
