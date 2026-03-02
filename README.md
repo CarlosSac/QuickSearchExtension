@@ -3,6 +3,8 @@
 
 # Quick Search
 
+![Quick Search icon](icons/icon128.png)
+
 Search any website instantly without looking for the search bar.
 
 Press **Alt+S** anywhere to open a quick search overlay, type your query, and hit Enter. Quick Search automatically finds and uses the site's own search functionality. No setup required.
