@@ -11,7 +11,7 @@ chrome.commands.onCommand.addListener((command) => {
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         files: ["content.js"]
-      });
+      }).catch(() => {});
     });
   }
 });
