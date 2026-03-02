@@ -92,6 +92,22 @@
     document.body.appendChild(overlay);
     input.focus();
 
+    let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function applyTheme(dark) {
+        isDark = dark;
+        box.style.background = dark ? '#1e1e1e' : '#fff';
+        box.style.boxShadow = dark ? '0 8px 40px rgba(0,0,0,0.6)' : '0 8px 40px rgba(0,0,0,0.3)';
+        input.style.background = dark ? '#2a2a2a' : '#fff';
+        input.style.color = dark ? '#f0f0f0' : '#111';
+        hint.style.color = dark ? '#555' : '#aaa';
+        suggestions.style.borderColor = dark ? '#333' : '#e5e5e5';
+        suggestions.style.background = dark ? '#1e1e1e' : '#fff';
+    }
+
+    applyTheme(isDark);
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => applyTheme(e.matches));
+
     let selectedIndex = -1;
 
     function getSuggestionItems() {
@@ -102,8 +118,8 @@
         const items = getSuggestionItems();
         selectedIndex = Math.max(-1, Math.min(index, items.length - 1));
         items.forEach((el, i) => {
-            el.style.background = i === selectedIndex ? "#f0f7ff" : "#fff";
-            el.style.color = i === selectedIndex ? "#0070f3" : "#111";
+            el.style.background = i === selectedIndex ? (isDark ? '#1a3a5c' : '#f0f7ff') : (isDark ? '#1e1e1e' : '#fff');
+            el.style.color = i === selectedIndex ? (isDark ? '#60a5fa' : '#0070f3') : (isDark ? '#f0f0f0' : '#111');
         });
     }
 
@@ -126,7 +142,7 @@
             const item = document.createElement("div");
             item.dataset.site = key;
             item.textContent = "@" + key;
-            item.style.cssText = "padding: 8px 14px; cursor: pointer; font-size: 13px; background: #fff;";
+            item.style.cssText = `padding: 8px 14px; cursor: pointer; font-size: 13px; background: ${isDark ? '#1e1e1e' : '#fff'}; color: ${isDark ? '#f0f0f0' : '#111'};`;
             item.addEventListener("mouseenter", () => setSelected(matches.indexOf(key)));
             item.addEventListener("click", () => selectSuggestion(key));
             suggestions.appendChild(item);
