@@ -1,9 +1,10 @@
+<div align="center">
 
 ![Quick Search icon](icons/icon128.png)
+
+</div>
 
 # Quick Search
-
-![Quick Search icon](icons/icon128.png)
 
 Search any website instantly without looking for the search bar.
 
