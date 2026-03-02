@@ -21,17 +21,17 @@ If no search bar is found on the page, it falls back to a Google `site:` search 
 
 ## Features
 
-**Universal shortcut**:Alt+S works on any website
+**Universal shortcut**: Alt+S works on any website
 
-**Native search detection**:automatically finds search inputs by type, name, id, class, placeholder, and aria-label attributes
+**Native search detection**: automatically finds search inputs by type, name, id, class, placeholder, and aria-label attributes
 
-**Google fallback**:when no native search bar exists, performs a `site:` scoped Google search
+**Google fallback**: when no native search bar exists, performs a `site:` scoped Google search
 
-**Site overrides**:preconfigured URL templates for sites like Gmail that need special handling
+**Site overrides**: preconfigured URL templates for sites like Gmail that need special handling
 
-**Enable/disable toggle**:click the extension icon to turn Quick Search on or off
+**Enable/disable toggle**: click the extension icon to turn Quick Search on or off
 
-**Lightweight**:no dependencies, no background network requests, minimal permissions
+**Lightweight**: no dependencies, no background network requests, minimal permissions
 
 ## Installation
 
