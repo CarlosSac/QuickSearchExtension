@@ -1,3 +1,6 @@
+
+![Quick Search icon](icons/icon128.png)
+
 # Quick Search
 
 Search any website instantly without looking for the search bar.
@@ -30,7 +33,7 @@ If no search bar is found on the page, it falls back to a Google `site:` search 
 ## Installation
 
 1. Clone or download this repository
-2. Open `chrome://extensions` in Chrome/Edge
+2. Open `chrome://extensions` in Chrome
 3. Enable **Developer mode** (top right)
 4. Click **Load unpacked** and select the project folder
 
