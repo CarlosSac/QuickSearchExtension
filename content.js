@@ -154,7 +154,7 @@
         const val = input.value;
         if (!val.startsWith("@")) { hideSuggestions(); return; }
         const typed = val.slice(1);
-        if (typed.includes(" ")) { hideSuggestions(); return; }
+        if (typed.length === 0 || typed.includes(" ")) { hideSuggestions(); return; }
         const matches = Object.keys(SITE_SHORTCUTS).filter(k => k.startsWith(typed.toLowerCase()));
         showSuggestions(matches);
     });
