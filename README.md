@@ -2,6 +2,8 @@
 
 ![Quick Search icon](icons/icon128.png)
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Install-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/quick-search/lloohfpnnajcghiioiajbeimomlhfphg)
+
 </div>
 
 # Quick Search
@@ -35,6 +37,9 @@ If no search bar is found on the page, it falls back to a Google `site:` search 
 
 ## Installation
 
+**Chrome Web Store** (recommended): [Install Quick Search](https://chromewebstore.google.com/detail/quick-search/lloohfpnnajcghiioiajbeimomlhfphg)
+
+**Manual install**:
 1. Clone or download this repository
 2. Open `chrome://extensions` in Chrome
 3. Enable **Developer mode** (top right)
