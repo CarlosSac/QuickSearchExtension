@@ -8,50 +8,43 @@
 
 # Quick Search
 
-Search any website instantly without looking for the search bar.
+Quick Search allows you to search any website instantly without needing to locate its specific search bar. 
 
-Press **Alt+S** anywhere to open a quick search overlay, type your query, and hit Enter. Quick Search automatically finds and uses the site's own search functionality. No setup required.
+Pressing **Alt+S** on any page opens a streamlined search overlay. Simply type your query and press Enter. The extension automatically identifies and utilizes the site's native search functionality, without any initial configuration.
 
 ## How It Works
 
-1. Press **Alt+S** on any webpage
-2. A clean search overlay appears at the top of the page
-3. Type your query and press **Enter**
-4. Quick Search locates the site's native search bar and submits your query through it
+1. Press **Alt+S** while browsing any webpage.
+2. A clean search overlay will appear at the top of your screen.
+3. Enter your search query and press **Enter**.
+4. The extension locates the website's native search input and automatically submits your query.
 
-If no search bar is found on the page, it falls back to a Google `site:` search scoped to the current domain.
+If a native search bar is not detected on the page, the extension reliably falls back to a Google `site:` search scoped specifically to the current domain.
 
 ## Features
 
-**Universal shortcut**: Alt+S works on any website
-
-**Native search detection**: automatically finds search inputs by type, name, id, class, placeholder, and aria-label attributes
-
-**Google fallback**: when no native search bar exists, performs a `site:` scoped Google search
-
-**Site overrides**: preconfigured URL templates for sites like Gmail that need special handling
-
-**Enable/disable toggle**: click the extension icon to turn Quick Search on or off
-
-**Lightweight**: no dependencies, no background network requests, minimal permissions
+* **Universal Shortcut**: The Alt+S command functions seamlessly across all websites.
+* **Native Search Detection**: The extension automatically identifies search inputs using specific attributes, including type, name, id, class, placeholder, and aria-label.
+* **Google Fallback**: In cases where a native search bar is absent, it automatically performs a domain-scoped Google `site:` search.
+* **Site Overrides**: (Working on it)
+* **Enable/Disable Toggle**: You can easily activate or deactivate the extension using the icon in your browser toolbar.
+* **Lightweight Architecture**: The extension operates with minimal permissions, requires no background network requests, and relies on zero external dependencies.
 
 ## Installation
 
 **Chrome Web Store** (recommended): [Install Quick Search](https://chromewebstore.google.com/detail/quick-search/lloohfpnnajcghiioiajbeimomlhfphg)
 
-**Manual install**:
-1. Clone or download this repository
-2. Open `chrome://extensions` in Chrome
-3. Enable **Developer mode** (top right)
-4. Click **Load unpacked** and select the project folder
+**Manual Install**:
+1. Clone or download this repository.
+2. Navigate to `chrome://extensions` in your Chrome browser.
+3. Enable **Developer mode** in the top right corner.
+4. Click **Load unpacked** and select the designated project folder.
 
 ## Permissions
 
-**activeTab**:to inject the search overlay into the current page
-
-**scripting**:to execute the content script on demand
-
-**storage**:to persist the enable/disable toggle and site overrides
+* **activeTab**: Required to inject the search overlay into the current webpage.
+* **scripting**: Necessary to execute the content script when the extension is triggered.
+* **storage**: Used to persist your enable/disable preferences and site overrides.
 
 ## License
 
